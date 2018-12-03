@@ -25,8 +25,10 @@ python3 Sup_predict_5comps.py --XX_DIR=/path/to/image --model_dir=/path/to/check
 
 
 ### Step by Step Result Sample
-![](result_sample/pick_A01-20150407-024.png)
-
+![](result_sample/A41-20140325-034_step.png)
+![](result_sample/A41-20140325-034_5comps.png)
+![](result_sample/B12-20120921-017_step.png)
+![](result_sample/B12-20120921-017_5comps.png)
 
 ### Acknowledgements 
 This repository reuses code from pytorch-unsupervised-segmentation by kanezaki and a U-Net shaped 10-layer CNN by RaoulMa. Many thanks to all the contributions!
