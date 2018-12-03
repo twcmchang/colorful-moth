@@ -4,7 +4,10 @@
 
 ## Introduction
 
-This repository contains the details of background-removal and 5-body-part segmentation processes of moth specimen images from Taiwan Endemic Species Research Institute.
+This repository contains the details of background-removal and 5-body-part segmentation processes of moth specimen images from TESRI(Taiwan Endemic Species Research Institute).
+
+Source data: BRCAS with labels. (Find samples in /data/brcas/)
+Target data: TESRI without labels. (Find samples in /data/tesri/)
 
 ---
 
@@ -19,12 +22,14 @@ python3 Sup_predict_rmbg.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpo
  - for 5-body-part segmentation
 python3 Sup_predict_5comps.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpoint/ --gpu='gpu_id'
 ```
- - [Postprocess.ipynb](Postprocess.ipynb) postprocesses background-removal model results. (find_contour and condition random field)
+ - [Postprocess.ipynb](Postprocess.ipynb) postprocesses background-removal model results(find_contour and condition random field).
  - [5comps_output_process.ipynb](5comps_output_process.ipynb) processes 5-comps model results to generate final images.
  - [Visualize.ipynb](Visualize.ipynb) visulizes some samples of different background-removal steps and 5-comps results.
 
 
-### Step by Step Result Sample
+### Result Sample
+The first row of each species are what we've tried to remove background, and then we chose the best one for each moth to segment its 5-body parts.
+The second row are the 5-body-part result of that moth.
 ![](result_sample/A41-20140325-034_step.png)
 ![](result_sample/A41-20140325-034_5comps.png)
 ![](result_sample/B12-20120921-017_step.png)
