@@ -19,9 +19,13 @@ python3 Sup_predict_rmbg.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpo
  - for 5-body-part segmentation
 python3 Sup_predict_5comps.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpoint/ --gpu='gpu_id'
 ```
- - Postprocess.ipynb postprocesses background-removal model results. (find_contour and condition random field)
- - 5comps_output_process.ipynb processes 5-comps model resultsto generate final images.
- - Visualize.ipynb visulizes some samples of different background-removal steps and 5-comps results.
+ - [Postprocess.ipynb](Postprocess.ipynb) postprocesses background-removal model results. (find_contour and condition random field)
+ - [5comps_output_process.ipynb](5comps_output_process.ipynb) processes 5-comps model resultsto generate final images.
+ - [Visualize.ipynb](Visualize.ipynb) visulizes some samples of different background-removal steps and 5-comps results.
+
+
+### Step by Step Result Sample
+![](result_sample/pick_A01-20150407-024.png)
 
 
 ### Acknowledgements 
