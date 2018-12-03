@@ -1,15 +1,13 @@
-# Moth Segmentation
-
+# Colorful Moth
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-## Introduction
 
-This repository contains the details of background-removal and 5-body-part segmentation processes of moth specimen images from TESRI(Taiwan Endemic Species Research Institute).
+---
+## Moth Segmentation
+This part contains the details of background-removal and 5-body-part segmentation processes of moth specimen images from TESRI(Taiwan Endemic Species Research Institute).
 
  - [Source data](data/brcas/): BRCAS with labels.
  - [Target data](data/tesri/): TESRI without labels.
-
----
 
 ### Usage
 ```
@@ -37,11 +35,11 @@ The second row are the 5-body-part result of that moth.
 ![](result_sample/B12-20120921-017_5comps.png)
 
 ### Acknowledgements 
-This repository reuses code from pytorch-unsupervised-segmentation by kanezaki and a U-Net shaped 10-layer CNN by RaoulMa. Many thanks to all the contributions!
+This repository reuses code from [pytorch-unsupervised-segmentation](https://github.com/kanezaki/pytorch-unsupervised-segmentation) by kanezaki and [Data_Science_Bowl_2018](https://github.com/RaoulMa/Data_Science_Bowl_2018) by RaoulMa. Many thanks to all the contributions!
 
 ### Environment
 The test environment is
  - Python 2.7.12
  - tensorflow-gpu 1.4.1	
  - torch 0.2.0
-
+---
