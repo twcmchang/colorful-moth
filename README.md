@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This repository contains the details of background-removal and 5-body-part segmentation process of moth specimen images from Taiwan Endemic Species Research Institute.
+This repository contains the details of background-removal and 5-body-part segmentation processes of moth specimen images from Taiwan Endemic Species Research Institute.
 
 ---
 
@@ -20,7 +20,7 @@ python3 Sup_predict_rmbg.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpo
 python3 Sup_predict_5comps.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpoint/ --gpu='gpu_id'
 ```
  - [Postprocess.ipynb](Postprocess.ipynb) postprocesses background-removal model results. (find_contour and condition random field)
- - [5comps_output_process.ipynb](5comps_output_process.ipynb) processes 5-comps model resultsto generate final images.
+ - [5comps_output_process.ipynb](5comps_output_process.ipynb) processes 5-comps model results to generate final images.
  - [Visualize.ipynb](Visualize.ipynb) visulizes some samples of different background-removal steps and 5-comps results.
 
 
