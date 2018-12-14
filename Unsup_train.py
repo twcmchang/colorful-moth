@@ -45,7 +45,7 @@ parser = argparse.ArgumentParser(description='PyTorch Unsupervised Segmentation'
 parser.add_argument('--gpu', default=7, type=int)
 
 parser.add_argument('--SAVEDIR', default='model/Unsup_rmbg')
-parser.add_argument('--XX_DIR', default='data/ori/tesri/')
+parser.add_argument('--XX_DIR', default='../A_moth_segmentation/data/ori/tesri/')
 
 parser.add_argument('--nChannel', metavar='N', default=100, type=int, help='number of channels')
 parser.add_argument('--maxIter', metavar='T', default=1000, type=int, help='number of maximum iterations')
