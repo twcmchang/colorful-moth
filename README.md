@@ -61,9 +61,4 @@ The second row are the 5-body-part result of that moth.
 ### Acknowledgements 
 This repository reuses code from [pytorch-unsupervised-segmentation](https://github.com/kanezaki/pytorch-unsupervised-segmentation) by kanezaki and [Data_Science_Bowl_2018](https://github.com/RaoulMa/Data_Science_Bowl_2018) by RaoulMa. Many thanks to all the contributions!
 
-### Environment
-The test environment is
- - Python 2.7.12
- - tensorflow-gpu 1.4.1	
- - torch 0.2.0
 ---
