@@ -56,7 +56,7 @@ parser.add_argument('--num_superpixels', metavar='K', default=20000, type=int, h
 parser.add_argument('--compactness', metavar='C', default=100, type=float, help='compactness of superpixels')
 
 args = parser.parse_args() 
-os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu_id)
 use_cuda =  torch.cuda.is_available()
 
 
@@ -272,7 +272,7 @@ for img_path in moths_path:
         loss.backward()
         optimizer.step()
 
-        print(batch_idx, '/', args.maxIter, 'n_label:', nLabels, 'loss:',loss.data[0], end='\r')
+        print(batch_idx, '/', args.maxIter, 'n_label:', nLabels, end='\r') #, 'loss:',loss.data[0], end='\r')
         if nLabels <= args.minLabels:
             print("nLabels", nLabels, "reached minLabels", args.minLabels, "\t" * 10)
             if not os.path.exists(model_dir):
