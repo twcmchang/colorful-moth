@@ -15,33 +15,25 @@ This part contains the details of background-removal and 5-body-part segmentatio
 
 ### Usage
 ```
-# pipenv
-
+### pipenv
 $ cd /to/working/directory/
 $ pipenv sync
 $ pipenv shell
   
-
-# get model
-
+### get model
 $ bash get_models.sh
 
 
-# train a new model
-
- - for unsupvised way
+### train - unsupvised
 $ python3 Unsup_train.py --XX_DIR=/path/to/image --SAVEDIR=/path/to/save/ --minLabels=/minimum/number/of/labels/ --gpu='gpu_id'
 
- - for supervised way
+### train - supervised
 $ python3 Sup_train.py --XX_DIR=/path/to/image/ --YY_DIR=/path/to/groundtruth/ --SAVEDIR=/path/to/save/ --num_class= number of output class --gpu='gpu_id'
 
-
-# prediction
-
- - for background removal
+### predict - background removal
 $ python3 Sup_predict_rmbg.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpoint/ --gpu='gpu_id'
 
- - for 5-body-part segmentation
+### predict - 5-body-part segmentation
 $ python3 Sup_predict_5comps.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpoint/ --gpu='gpu_id'
 ```
  - [Postprocess.ipynb](Postprocess.ipynb) postprocesses background-removal model results(find_contour and condition random field).
