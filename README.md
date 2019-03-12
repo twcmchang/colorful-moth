@@ -36,6 +36,8 @@ $ python3 Sup_predict_rmbg.py --XX_DIR=/path/to/image --model_dir=/path/to/check
 ### predict - 5-body-part segmentation
 $ python3 Sup_predict_5comps.py --XX_DIR=/path/to/image --model_dir=/path/to/checkpoint/ --gpu='gpu_id'
 ```
+ - [Elevation_prediction.ipynb](Elevation_prediction.ipynb) builds the ResNet model to predict species elevation.
+ - [Feature_Extraction_and_Assemblage_Clustering.ipynb](Feature_Extraction_and_Assemblage_Clustering.ipynb) extracts deep features and then clusters moth species into several assemblages.
  - [Postprocess.ipynb](Postprocess.ipynb) postprocesses background-removal model results(find_contour and condition random field).
  - [5comps_output_process.ipynb](5comps_output_process.ipynb) processes 5-comps model results to generate final images.
  - [Visualize.ipynb](Visualize.ipynb) visulizes some samples of different background-removal steps and 5-comps results.
